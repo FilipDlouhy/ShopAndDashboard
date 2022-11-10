@@ -1,0 +1,1651 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+.BAD{  animation: color-change 1s infinite;}
+.container {
+width: 100vw;
+}
+.hidden{
+  display: none;
+}
+.navbar{
+background-color: #045DE9;
+height:70px;
+width: 100vw;
+display: flex;
+padding: 0 100px;
+justify-content: space-between;
+}
+.leftNavbarSide{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.6rem;
+  color: white;
+  padding-left: 50px;
+}
+.rightNavbarSide{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  color: white;
+  padding-right: 50px;
+  font-size: 2rem;
+}
+.rightNavbarSide i {
+  margin: 20px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.rightNavbarSide i:hover{
+  font-size: 2.5rem;
+}
+.singUpForm{
+  margin:  0 auto;
+  width: 700px;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 40px;
+  background-color: rgba(180, 178, 178, 0.021);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+margin-bottom: 80px;
+}
+.loginForm{
+  margin:  0 auto;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 40px;
+  background-color: rgba(180, 178, 178, 0.021);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+margin-bottom: 80px;
+}
+.singUpFormHeader{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bolder;
+  background-color: #045DE9;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-bottom: 80px;
+  flex-direction: column;
+}
+.formLabelInput{
+  margin: 20px;
+  width: 100%;
+  height: 170px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.formLabelInput label{
+  font-size: 2.25rem;
+  font-weight: bolder;
+}
+.formLabelInput input{
+  height: 60px;
+  width: 400px;
+  display: flex;
+align-items:center;
+justify-content: center;
+font-size: 1.5rem;
+border-radius: 40px;
+text-align: center;
+border: 0.4px solid rgba(0, 0, 0, 0.438);
+cursor: pointer;
+transition: 0.4s;
+}
+.formLabelInput input:focus{
+  width: 470px;
+}
+.singUpFormBTN{
+  margin-top: 40px;
+  width: 300px;
+  height: 90px;
+border: none;
+  background-color: #045DE9;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.singUpFormBTN:hover{
+  width: 350px;
+  border-radius: 20px;
+}
+.bellowNav{
+  display: flex;
+    margin-bottom: 40px;
+    width: 100vw;
+    align-items: center;
+    height: 170px;
+    justify-content: space-around;
+}
+.bellowNavImgDiv{
+  width: 20%;
+  display: flex;
+justify-content: center;
+}
+.bellowNavImg{
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+.bellowNavSearch{
+  display: flex;
+  width: 40%;
+justify-content: center;  
+position: relative;
+}
+.searchBar{
+  width:66%;
+  height: 200px;
+  position: absolute;
+  z-index: 2000;
+  overflow-x: hidden;
+  overflow-y: auto;
+left: 6%;
+background-color: #000000a2;
+box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2);
+top: 100%;
+border-bottom-left-radius: 25px;
+border-bottom-right-radius: 25px;
+}
+.outputSearch{
+  display: flex;
+  color: white;
+  font-size: 0.9rem;
+  justify-content: space-around;
+  height: 60px;
+  align-items: center;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.outputSearch:hover{
+  background-color: #009FFD;
+}
+.outputSearch div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+.bellowNavBTNS{
+  width: 40%;
+  display: flex;
+align-items: center;
+justify-content: space-around;
+padding-right: 30px;
+}
+.bellowNavSearch input{
+  width: 450px;
+height: 60px;
+text-align: center;
+font-size: 1.5rem;
+font-weight: bolder;
+}
+
+.bellowNavSearch button{
+  width: 150px;
+height: 60px;
+background-color: black;
+color:white;
+font-size: 1.5rem;
+cursor: pointer;
+}
+.bellowNavBTNS button{
+  width: 150px;
+height: 60px;
+background-color: white;
+color:black;
+font-size: 1.5rem;
+margin: 15px;
+border: none;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.4s;
+cursor: pointer;
+}
+.bellowNavBTNS button:hover{
+  background-color: black;
+  color:white;
+}
+.bellowNavBTNS i{
+  font-size: 3rem;
+border-radius: 20px;
+cursor: pointer;
+transition: 0.4s;
+  margin: 10px;}
+  .bellowNavBTNS i:hover{
+    color: #009FFD;
+  }
+  .bellowNavBTNSSpan{
+    width:35px;
+    height: 35px;
+    background-color: red;
+    margin-right: 30px;
+    color: white;
+    border-radius: 40px;
+    position: absolute;
+    top: 0%;
+    right:0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 1.25rem;
+  }
+  .basketDiv{
+    width: 120px ;
+    height: 50px;
+    position: relative;
+  }
+  .items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row ;
+  width:90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  }
+.item{
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.4s;
+  cursor: pointer;
+  text-align: center;
+  margin: 20px;
+}
+.item:hover{
+  width: 320px;
+  height: 420px;
+}
+.itemImgDiv{
+  width: 100%;
+  height: 50%;
+  background-color: #05E8BA;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemImgDiv img{
+  width: 80%;
+  height: 80%;
+}
+.itemDescription{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 50%;
+  padding: 10px 20px;
+}
+.itemDescription h1{
+  font-size: 1.5rem;
+}
+.item p{
+  font-size: 1.5rem;
+}
+.Stars i {
+  font-size: 1.25rem;
+  color:yellow;
+ margin: 1px;
+}
+
+.filterProducts{
+  width: 30%;
+  height:600px;  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-left: 100px;
+}
+.filterProducts button{
+ width: 170px;
+ height: 70px;
+ background-color: white;
+ font-size: 1.75rem;
+ border: none;
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+font-weight: bolder;
+cursor: pointer;
+transition: 0.4s;
+margin: 20px;
+border-radius: 10px;
+}
+.filterProducts button:hover{
+  position: sticky;
+  background-color: #009FFD;
+  color: white;
+}
+.mainPage{
+  display: flex;
+}
+.miniProfile{
+width: 300px;
+height: 90px;
+background-color: #009FFD;
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bolder;
+font-size: 1.5rem;
+color: white;
+text-align: center;
+cursor: pointer;
+}
+.profilePage{
+  margin: 0 auto;
+  width:80vw;
+  height: 75vh;
+  display: flex;
+}
+.profilePageProfile{
+  width: 500px;
+  height: 450px;
+  box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
+  background-image: url("./img/profileBackgrund.jpg");
+  background-repeat: no-repeat;
+  background-size: 500px 200px;
+}
+.profilePageProfileEmpty{
+width:70% ;
+height:150px;
+}
+.prfilePageProfileUserInfo{
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.profilePageIcon{
+  width: 100px;
+  height: 100px;
+  border-radius: 80px;
+  background-color: #009FFD;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.profilePageProfileUserInfo{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+}
+.profilePageProfileUserInfo h2{
+margin: 20px;
+font-weight: bolder;
+font-size: 2.5rem;
+}
+.profilePageProfileUserInfo p{
+font-size: 1rem;
+color: rgba(0, 0, 0, 0.722);
+  }
+.profilePageProfileFooter{
+  width: 100%;
+  height: 65px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  transition: 0.4s;
+  cursor: pointer;
+  justify-content: space-between;
+}
+.profilePageProfileFooter:hover{
+  background-color: #045DE9;
+  color: white;
+}
+.profilePageProfileFooter div{
+  background-color: #045DE9;
+font-size: 1.25rem;
+color: white;
+width: 30px;
+border-radius: 90px;
+margin-right: 20px;
+height: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
+}
+.profileChosenOprion{
+  background-color: #21D190;
+  color: white;
+}
+
+.profilePageProfileSettings{
+width: 800px;
+height: 500px;
+margin-left: 30px;
+box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
+margin-bottom: 80px;
+padding: 10px;
+}
+.profilePageProfileSettings h1{
+  text-align: center;
+  margin-top: 10px;
+  color: red;
+  text-transform: uppercase;
+}
+.profilePageProfileSettingsDiv{
+width: 100%;
+height: 200px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.profilePageProfileSettingsDiv div{
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.profilePageProfileSettingsDiv div label{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgba(128, 128, 128, 0.579);
+}
+.profilePageProfileSettingsDiv div input{
+  border: none;
+  box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
+  width: 300px;
+  height: 55px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.profilePageUpdateProfileButton{
+  background-color: #21D190;
+  display: flex;
+  align-items: center;
+justify-content: center;
+width: 600px;
+margin: auto;
+height: 70px;
+border: none;
+color: white;
+font-size: 1.75rem;
+font-weight: bolder;
+cursor: pointer;
+transition: 0.4s;
+}
+.profilePageUpdateProfileButton:hover{
+  width: 650px;
+}
+.productPage{
+  width: 100vw;
+  display: flex;
+justify-content: center;
+align-items: center ;
+flex-direction: column;
+padding-bottom: 50px;
+max-height: 200vh;
+}
+.productPageTop{
+  height:90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+.productPageImg{
+  height: 85%;
+  width:40%;
+  background-color: #21d19149;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productPageImg img{
+  width: 80%;
+  height: 80%;
+}
+.productPageDescription{
+  width: 40%;
+  overflow-wrap: break-word;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.productPageDescription h1{
+  font-size: 2.25rem;
+  color: rgba(0, 0, 0, 0.853);
+}
+.productPageDescription p{
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  text-align: start;
+}
+.productPagePriceEtc{
+width: 70%;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.productPagePriceEtc div{ 
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  padding: 10px;
+}
+.productPagePriceEtcDiv{
+  border: 3px solid rgba(128, 128, 128, 0.3);
+  width:600px;
+}
+.productPagePriceEtcBlack{
+  color: black;
+  word-spacing: 2px;
+  font-weight: bolder;
+}
+.productPagePriceEtcGray{
+  color: gray;
+  word-spacing: 2px;
+  font-weight: bolder;
+}
+.productPagePriceEtcStars{
+ width: 180px;
+ font-size: 1.5rem;
+ color: yellow;
+}
+.productPagePriceEtcStars i {
+  margin: 0 auto;
+}
+.productPageBottom{
+  margin: 0 auto;
+  width:80vw;
+  height: 70vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.productPageReviewesDiv{
+  overflow-x: hidden;
+  overflow-y: auto;
+width:600px;
+max-height: 700px;
+}
+.productPageReviewes h1{
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.799);
+  letter-spacing: 4px;
+}
+.productPageReview{
+  width: 500px;
+  height: 225px;
+  background-color: rgba(128, 128, 128, 0.076);
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.productPageReviewHeader{
+  font-size: 1.25rem;
+  font-weight: bolder ;
+}
+.stars {
+  color: yellow;
+  font-size: 1.25rem;
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+.comment{
+  width: 100%;
+  height: 50px;
+  background-color: #045ce952;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  color: #045DE9;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+.reviewDate{
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.832);
+  font-weight: bolder;
+}
+.customerReviewOne{
+  height: 200px;
+}
+.customerReviewOne h1{
+  font-size: 1.5rem;
+  color: gray;
+  margin: 20px 0;
+}
+.customerReviewOne p{
+height: 80px;
+width: 500px;
+font-size: 1.4rem;
+border-radius: 5px;
+color: orange;
+background-color: rgba(255, 166, 0, 0.344);
+display: flex;
+align-items: center;
+word-spacing: 5px;
+justify-content: center;
+}
+.customerReviewOne p span{
+  color: black;
+  margin: 5px;
+  font-weight: bolder;
+}
+.productPageReviewTwo{
+  display: flex;
+  flex-direction: column;
+  height:400px ;
+  justify-content: space-around;
+}
+.productPageReviewTwoDivOne{
+  padding: 20px;
+width: 500px;
+height: 150px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-around;
+font-size: 2rem;
+font-weight: bolder;
+}
+.productPageReviewTwoDivOne select{
+  width:500px ;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.035);
+}
+.productPageReviewTwoDivTwo{
+  height: 600px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  display: flex;
+  padding: 20px;
+  width: 500px;
+}
+
+.productPageReviewTwoDivTwo label{
+  font-size: 2rem;
+font-weight: bolder;
+}
+.productPageReviewTwoDivTwo textarea{
+  font-size: 1.5rem;
+  padding: 10px;
+font-weight: bolder;
+background-color: rgba(0, 0, 0, 0.035);
+width: 500px;
+height: 150px;
+text-align: center;
+outline: none;
+resize: none;
+}
+.productPageReviewTwoDivTwo button{
+width: 500px;
+margin: 40px 0;
+height: 50px;
+background-color: black;
+font-size: 1.5rem;
+color: white;
+text-transform: uppercase;
+font-weight: bolder;
+letter-spacing: 3px;
+border-radius: 5px;
+cursor: pointer;
+border: none;
+transition: 0.4s;
+}
+.productPageReviewTwoDivTwo button:hover{
+  background-color: #009FFD;
+  letter-spacing: 6px;
+}
+.quantity{
+width: 250px;
+height: 30px;
+font-size: 1.25rem;
+background-color: rgba(134, 133, 133, 0.09);
+text-align: center;
+outline: none;
+border: none;
+}
+.productPagePriceEtc button{
+  margin:20px;
+  width: 550px;
+  background-color: #05E8BA;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+font-size: 2rem;
+font-weight: bolder;
+border-radius: 5px;
+  border: none;
+  height: 60px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.productPagePriceEtc button:hover{
+  width: 600px;
+  background-color:black;
+  word-spacing: 5px;
+}
+.ShoppingCartPage{
+  width: 100vw;
+  min-height: 50vh;
+  max-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ShoppingCartPageHeader{
+  width: 80%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-color: #05e8bb32;
+  margin: 0 auto;
+color: #08b895;
+font-size: 3rem;
+font-weight: bolder;
+margin-bottom: 30px
+}
+.cartItem{
+  position: relative;
+  width: 75%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
+border-radius: 5px;
+margin: 20px;
+padding: 0 20px;
+}
+.cartItem button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-bottom-right-radius: 30px;
+  outline: none;
+  border: none;
+  background-color: red;
+font-size: 1.75rem;
+font-weight: bolder;
+color: white;
+cursor: pointer;
+transition: 0.4s;
+  }
+  .cartItem button:hover{
+    background-color: darkred;
+  }
+.cartItem img{
+  background-color: #05e8bb2c;
+  padding: 10px;
+  width: 15%;
+  height: 160px;
+  border-radius: 20px;
+}
+.cartItem div{
+  height: 50%;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.cartItem div select{
+  width: 200px;
+  height: 50px;
+text-align: center;
+border-radius: 10px;
+background-color: rgba(128, 128, 128, 0.108);
+box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
+border: none;
+}
+.cartItem div h2{
+  font-size: 1.75rem;
+}
+.cartItem div p{
+  font-size: 1.75rem;
+}
+.ShoppingCartPageFooter{
+  width: 80%;
+  margin: 50px 0;
+}
+.ShoppingCartPageFooter p{
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: grey;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.605);
+  padding-bottom: 15px;
+}
+.ShoppingCartPageFooter p span{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: black;
+}
+.ShoppingCartPageFooterButtons{
+  width: 100%;
+  height: 150px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.ShoppingCartPageFooterButtons button{
+  width: 400px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bolder;
+  transition: 0.4s;
+}
+.continueShopping{
+  background-color: black;
+}
+.checkout{
+  background-color: #05E8BA;
+}
+.ShoppingCartPageFooterButtons button:hover{
+  cursor: pointer;
+  width: 430px;
+  letter-spacing: 4px;}
+.checkoutPage{
+  display: flex;
+  width: 80vw;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.checkoutPageHeader{
+  height: 200px;
+  background-color: #05e8bb3b;
+  width: 100%;
+  display: flex ;
+  justify-content: space-around;
+  margin-bottom: 80px;
+  border-radius: 10px;
+}
+.checkoutPageHeaderDiv{
+  width: 33%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.checkoutPageHeaderDivIcon{
+  height: 100px;
+  width: 100px; 
+  background-color: #08b89549;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.789);
+}
+.checkoutPageHeaderDivText{
+  height: 80%;
+  display: flex;
+  align-items: center;
+flex-direction: column;
+justify-content: space-around;
+text-align: center;
+}
+.checkoutPageHeaderDivTextPONE{
+  width: 100px;
+  height: 30px;
+  opacity: 0;
+}
+.checkoutPageHeaderDivTextTWORed{
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.25rem;
+  color: white;
+  font-weight: bolder;
+  height: 30px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+flex-direction: column;
+justify-content:center;
+}
+.checkoutPageHeaderDivTextTWOBlue{
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.25rem;
+  color: white;
+  font-weight: bolder;
+  height: 30px;
+  background-color: #009FFD;
+  display: flex;
+  align-items: center;
+flex-direction: column;
+justify-content:center;
+}
+.checkoutPageMiddle{
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.checkoutPageMiddleShowItems{
+  width: 70%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.checkoutPageMiddleItem{
+  width: 90%;
+  margin: 10px;
+  height: 120px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2);
+  display: flex ;
+  align-items: center;
+  justify-content: space-around;
+}
+.checkoutPageMiddleItem img{
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.4s;
+  padding:10px;
+}
+.checkoutPageMiddleItem img:hover{
+  background-color: #00a0fdd4;
+}
+.checkoutPageMiddleItem h1{
+  font-size: 1rem;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow-wrap: break-word;
+
+  color: rgba(0, 0, 0, 0.689);
+}
+.checkoutPageMiddleItem div{
+  display: flex ;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 80%;
+}
+ .checkoutPageMiddleItem div h2{
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.586);
+  font-weight: bolder;
+ } 
+ .checkoutPageMiddleItem div p{
+  font-weight: bolder;
+ }
+ .checkoutPageStats{
+  width: 25%;
+  border-radius: 10px;
+  height: 250px;
+  background-color: rgba(128, 128, 128, 0.462);
+ }
+ .checkoutPageStats div{
+  height: 25%;
+  display: flex;
+  align-items:center ; 
+ }
+ .checkoutPageStats div div {
+  width: 100%;
+height: 62px;
+display: flex;
+align-items: center;
+justify-content: center;
+ }
+ .checkoutPageHeaderDivDivBorder{
+  border-bottom: 1px solid gray;
+ }
+ .checkoutPageStatsStat{
+  border-left: 1px solid gray;
+font-size: 1.25rem;
+font-weight: bold;
+color: rgba(0, 0, 0, 0.648);
+ }
+ .checkoutPageStatsP{
+  font-size: 1.5rem;
+  font-weight: bolder;
+ }
+.deliveryForm{
+  margin:  0 auto;
+  width: 700px;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 40px;
+  background-color: rgba(180, 178, 178, 0.021);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+margin-bottom: 80px;
+}
+.CheckoutPageButtons{
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  height: 150px;
+  align-items: center;
+  justify-content: space-between;
+}
+.CheckoutPageButtons button{
+  width: 300px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bolder;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.CheckoutPageButtons button:hover{
+  width: 350px;
+}
+.CheckoutPageButtonsOne{
+  background-color: #009FFD;
+}
+.CheckoutPageButtonsTwo{
+  background-color:#05E8BA;
+}.ordersListPage{
+  width:50vw;
+  margin-left: 100px;
+  height: 63vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.ordersListPageHeader{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  border-bottom: 2px solid black;
+  font-size: 1.75rem;
+  font-weight: bolder;
+}
+.ordersListPageOrder{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  font-size: 1.15rem;
+  font-weight: bolder;
+}
+.ordersListPageOrderBigDiv{
+  width: 50%;
+  display:flex;
+align-items:center;
+justify-content:flex-start;
+padding-left:5px;
+}
+.ordersListPageOrderSmallDiv{
+  width: 20%;
+  display:flex;
+align-items:center;
+justify-content:flex-start;
+padding-left:5px;
+}
+.orderPayed{
+  background-color: #05e8bb28;
+  color: rgba(0, 128, 0, 0.844);
+}
+.orderNotPayed{
+  background-color:rgba(255, 0, 0, 0.122);
+  color:rgba(255, 0, 0, 0.734);
+}
+.orderLink{
+  transition: 0.4s;
+}
+.orderLink:hover{
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.payForm{
+  margin:  0 auto;
+  width: 700px;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 40px;
+  background-color: rgba(180, 178, 178, 0.021);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+margin-bottom: 80px;
+}
+.payFormHeader{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  background-color: #045DE9;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+.payFormBTN{
+  margin-top: 40px;
+  width: 400px;
+  height: 90px;
+border: none;
+  background-color: #045DE9;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.payFormBTN:hover{
+  width: 450px;
+  border-radius: 20px;
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+@keyframes color-change {
+  0% { color: red; }
+  50% { color: white; }
+  100% { color: red; }
+}
+
+
+@media screen and (max-width: 1500px) {
+  .profilePage{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 1000px;
+    margin-top: 0px;
+    padding-bottom: 80px;
+  }
+  .profilePageProfile{
+margin: 50PX;
+  }
+  .miniProfile{
+    width: 200px;
+    height: 50px;
+    margin: 10px 20px;
+    }
+}
+@media screen and (max-width: 1300px) {
+ .bellowNavBTNSDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ }
+ .productPageImg{
+  height: 65%;
+  width:40%;
+}
+.productPageDescription{
+  width: 20%;
+}
+.productPagePriceEtcDiv{
+  width:400px;
+}
+.productPagePriceEtc button{
+  width: 400px;
+}
+.productPagePriceEtc button:hover{
+  width: 420px;
+}
+.productPageReviewesDiv{
+  overflow-x: hidden;
+  overflow-y: auto;
+width:400px;
+max-height: 700px;
+}
+.productPageReviewes h1{
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.799);
+  letter-spacing: 4px;
+}
+.productPageReview{
+  width:350px;
+  height: 170px;
+}
+.productPageReviewHeader{
+  font-size: 1rem;
+  font-weight: bolder ;
+}
+.stars {
+  font-size: 1rem;
+  width: 120px;
+}
+.customerReviewOne{
+width: 300px;
+}
+.customerReviewOne p{
+  height: 60px;
+  width: 300px;
+  font-size: 1rem;
+  word-spacing: 0px;
+  }
+  .checkoutPageHeaderDivIcon{
+    font-size: 2.5rem;  }
+    .checkoutPageHeaderDivText{
+font-size: 0.8rem;
+    }
+    .checkoutPageHeaderDivTextTWORed{
+      width: 150px;
+      font-size: 1rem;
+    }
+    .checkoutPageHeaderDivTextTWOBlue{
+      width: 150px;
+      font-size: 1rem;
+    }
+    .checkoutPageHeaderDivIcon{
+      height: 80px;
+      width: 80px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+  .leftNavbarSide{
+    font-size: 0.5rem;
+    padding-left: 0px;
+  }
+  .productPageTop{
+    flex-direction: column-reverse;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    margin:20px auto;
+      }
+      .productPageDescription{
+        width: 50%;
+        text-align: center;
+      }
+      .productPageDescription h1{
+        margin: 20px 10px;
+      }
+      .productPageDescription p{
+        margin: 20px 10px;
+        text-align: center;
+      }
+      .productPagePriceEtcDiv{
+        width:600px;
+        margin-left: 40%;
+      }
+      .productPagePriceEtc button{
+        width: 500px;
+        margin-left: 50%;
+      }
+      .productPagePriceEtc button:hover{
+        width: 550px;
+      }
+  .bellowNavBTNSDiv{
+    justify-content: end;
+   }
+  .bellowNavBTNS button{
+    width: 100px;
+  height: 40px;
+  font-size: 1rem;
+  margin: 15px;
+  border: none;
+  }
+  .bellowNavImg{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+  }
+  .bellowNavSearch input{
+    width:350px;
+  height: 40px;
+  font-size: 1.25rem;
+  }
+  .bellowNavSearch button{
+    width: 120px;
+  height: 40px;
+  font-size: 1.25rem;
+  }
+  .item{
+    width: 250px;
+    height: 300px;
+  }
+  .item:hover{
+    width: 270px;
+    height: 330px;
+  }
+  .productPageBottom{
+flex-direction: column-reverse;
+margin-top:250px ;
+justify-content: space-around;
+margin-left: 20%;
+  }
+  .customerReviewOne{
+    width: 400px;
+    margin-bottom: 50px;
+    }
+    .customerReviewOne p{
+      height: 60px;
+      width: 400px;
+      font-size: 1rem;
+      word-spacing: 0px;
+      }
+      .profilePageProfileSettings{
+        width: 500px;
+        height: 400px;
+        margin-left: 0;
+        margin-bottom: 60px;
+        padding: 10px;
+        }
+        .profilePageProfileSettingsDiv{
+        height: 150px;
+        }
+        .profilePageProfileSettingsDiv div label{
+          font-size: 1rem;
+        }
+        .profilePageProfileSettingsDiv div input{
+          width: 200px;
+          height: 40px;
+          font-size: 1rem;
+        }
+        .profilePageUpdateProfileButton{
+        width: 420px;
+        height: 50px;
+        font-size: 1.25rem;
+        }
+        .profilePageUpdateProfileButton:hover{
+          width: 450px;
+          }
+          .ordersListPageOrder{
+            font-size: 0.7rem;
+          }
+          .orderLink:hover{
+             font-size: 0.7rem;
+             color: #009FFD;
+          }
+          .ordersListPageHeader{
+            font-size: 1rem;
+          }
+          .ordersListPage{
+            margin-left: 0px;
+          }
+          .ordersListPage{
+            width:70vw;
+          }
+          .checkoutPageHeaderDivTextTWORed{
+            width: 100px;
+            font-size: 0.8rem;
+          }
+          .checkoutPageHeaderDivTextTWOBlue{
+            width: 100px;
+            font-size: 0.8rem;
+          }
+          .checkoutPageStatsP{
+            font-size: 1rem;
+           }
+           .checkoutPageStatsStat{
+          font-size: 1rem;
+           }
+           .checkoutPageMiddle{
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 500px;
+          }
+          .checkoutPageMiddleShowItems{
+            width: 100%;
+          }
+          .checkoutPageStats{
+            width: 55%;
+           }
+        }
+ @media screen and (max-width: 700px) {
+  .mainPage{
+   flex-direction: column;
+  }
+  .filterProducts{
+    width: 400px;
+    flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+margin-left:15% ;
+  height: 100px;
+  padding-left: 0px;
+  }
+  .filterProducts button{
+   width: 100px;
+   height: 50px;
+   font-size: 1rem;
+   margin: 5px;
+  }
+  .bellowNavImg{
+    width: 100px;
+    height: 100px;
+  }
+  .bellowNav{
+    margin-top: 50px;
+   justify-content: space-between;
+   flex-direction: column;
+   margin-bottom: 120px;
+  }
+  .bellowNavBTNSSpan{
+    right:30%;
+  }
+  .bellowNavBTNS{
+    justify-content: space-between;
+    width: 60%;
+    padding: 0;
+  }
+  .outputSearch{
+    font-size: 0.5rem;
+  }
+  .searchBar{
+    width:116%;
+    height:100px;
+    left: -24%;
+  }
+  .navbar{
+    padding:0;
+    }
+    .leftNavbarSide{
+      font-size: 0.4rem;
+    }
+    .rightNavbarSide{
+      font-size: 1.25rem;
+    }
+    .basketDiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    }
+    .productPageTop{
+    margin-top: 200px;
+        }
+        .productPageDescription{
+          width: 50%;
+          text-align: center;
+        }
+        .productPageDescription h1{
+          margin: 20px 10px;
+        }
+        .productPageDescription p{
+          margin: 20px 10px;
+          text-align: center;
+          font-size: 1rem;
+        }
+        .productPagePriceEtcDiv{
+          width:400px;
+          margin-left: 20%;
+        }
+        .productPagePriceEtc button{
+          width: 400px;
+          margin-left: 45%;
+        }
+        .productPagePriceEtc button:hover{
+          width: 450px;
+        }
+        .productPageBottom{
+          margin-left:10%;
+            }
+            .loginForm{
+              width: 400px;
+              height: 500px;
+            }
+            .formLabelInput{
+              height: 120px;
+            }
+            .formLabelInput label{
+              font-size: 1.75rem;
+            }
+            .formLabelInput input{
+              height: 40px;
+              width: 300px;
+            }
+            .checkoutPageHeader{
+              flex-direction: column;
+              height: 450px;
+              justify-content: center;
+              align-items: center;
+              }
+              .checkoutPageHeaderDivIcon{
+                height: 100px;
+                width: 100x;
+                margin: 0 20px;
+              }
+              .checkoutPageHeaderDiv{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+              }
+              .checkoutPageHeaderDivText{
+       width: 30%;
+              }
+              .checkoutPageMiddleItem h1{
+                width: 100px;
+              }
+              .CheckoutPageButtons{
+                margin-top: 50px;
+               flex-direction: column;
+              }
+              .payForm{
+                  height: 600px;
+                width:400px;
+              }
+              .payFormBTN{
+                margin-top: 10px;
+                width: 300px;
+                height: 50px;
+                font-size:1.25rem;
+                margin-bottom: 10px;
+              }
+              .payFormBTN:hover{
+                width: 350px;
+                border-radius: 20px;
+              }
+              .formLabelInput input:focus{
+                width: 350px;
+              }
+            }

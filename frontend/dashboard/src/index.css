@@ -1,0 +1,297 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  font-family: 'Roboto', sans-serif;
+margin: 0;
+padding: 0;
+}
+.container{
+  overflow-y: hidden;
+  width: 100vw;
+  margin: 0;
+}
+.offset{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.productsHeight{
+min-height: 600px;
+max-height: 1000px;
+overflow-x: hidden;
+overflow-y: auto;
+}
+.addProductHeight{
+  height: 1100px;
+}
+.addProductForm{
+  margin: 20px auto;
+  height:900px;
+  width: 700px;
+border-radius: 10px;
+box-shadow: -4px 5px 68px 19px rgba(0,0,0,0.33);
+-webkit-box-shadow: -4px 5px 68px 19px rgba(0,0,0,0.33);
+-moz-box-shadow: -4px 5px 68px 19px rgba(0,0,0,0.33);
+  padding: 20px;
+}
+.ordersDiv{
+  height: 450px;
+}
+.ordersShow{
+  overflow-x: hidden;
+overflow-y: auto;
+  height: 360px;
+}
+.orderPreview{
+  height: 700px;
+}
+.orderPreviewDiv{
+  height: 500px;
+}
+.usersHeihgt{
+  min-height:400px;
+  max-height:600px;
+  overflow-x: hidden;
+overflow-y: auto;
+}
+.menuOptions{
+  position: absolute;
+  right: 6%;
+  top:11%;
+}
+.sellersHeight{
+  min-height:500px;
+  max-height:900px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.buyProductsHeight{
+  min-height:400px;
+  max-height:1200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.profilePageWidth{
+  width: 600px;
+  height: 450px;
+}
+.barChart{
+  width: 500px;
+  height: 500px;
+}
+.barChartHeightDiv{
+  width: 600px;
+  height: 350px;
+}
+.pieChart{
+  align-items: center;
+  justify-content: center;
+ display: flex;
+  width: 500px;
+  height: 500px;
+}
+.chartDivHeigt{
+height: 600px;
+}
+.modalBg{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.614);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.modal{
+  width: 500px;
+  height: 500px;
+  z-index: 200;
+  background-color: azure;
+  display:  flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.modal h1{
+  text-align: center;
+  margin: 20px auto;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.none{
+  display: none;
+}
+.LineChartDiv{
+  width: 900px;
+  height: 450px;
+  margin: 50px auto;
+  display:  flex;
+  align-items: center;
+  flex-direction: column;
+}
+.lineChart{
+  width: 800px;
+}
+.sideBarHeight{
+ min-height: 800px;
+ max-height: 1200px;
+}
+.searchArr{
+  position: absolute;
+  top: 9.5%;
+  width: 600px;
+  height: 200px;
+  background-color:#61c5ff;
+  box-shadow: -6px 61px 119px 9px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -6px 61px 119px 9px rgba(0,0,0,0.75);
+  -moz-box-shadow: -6px 61px 119px 9px rgba(0,0,0,0.75);
+  overflow-x: hidden;
+overflow-y: auto;
+}
+.containerPadding{
+  padding-left: 20%;
+  overflow-y: hidden;
+}
+@media only screen and (max-width: 1500px) {
+  .searchArr{
+    position: absolute;
+    top: 9.5%;
+    width: 500px;
+    height: 200px;
+    background-color:#61c5ff;
+    box-shadow: -6px 61px 119px 9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -6px 61px 119px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -6px 61px 119px 9px rgba(0,0,0,0.75);
+    overflow-x: hidden;
+  overflow-y: auto;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .searchArr{
+    top: 9.5%;
+    width: 300px;
+    height: 200px;
+
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .LineChartDiv{
+    width: 600px;
+    height: 350px;
+    margin: 50px auto;
+    display:  flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .lineChart{
+    width: 500px;
+  }
+  .barChartHeightDiv{
+    width: 500px;
+    height: 350px;
+  }
+  .pieChart{
+    align-items: center;
+    justify-content: center;
+   display: flex;
+    width: 400px;
+    height: 500px;
+  }
+  .barChartHeightDiv{
+    width: 520px;
+    height: 350px;
+   }
+   .addProductForm{
+    margin: 20px auto;
+    height:900px;
+    width: 500px;
+  }
+  }
+
+@media only screen and (max-width: 800px) {
+  .LineChartDiv{
+    width: 400px;
+    height: 250px;
+    margin: 50px 0;
+    display:  flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .lineChart{
+    width: 300px;
+  }
+  .barChartHeightDiv{
+    width: 400px;
+    height: 250px;
+  }
+  .pieChart{
+    align-items: center;
+    justify-content: center;
+   display: flex;
+    width: 250px;
+    height: 250px;
+  }
+  .barChartHeightDiv{
+    width: 420px;
+    height: 280px;
+    margin-bottom: 80px;
+  }
+  .barChart{
+    width: 400px;
+    height: 500px;
+  }
+  .searchArr{
+    top:14%;
+    width: 300px;
+    height: 200px;
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .LineChartDiv{
+    width: 350px;
+    height: 200px;
+    margin: 50px 0;
+    display:  flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .lineChart{
+    width: 250px;
+  }
+  .pieChart{
+    align-items: center;
+    justify-content: center;
+   display: flex;
+    width: 200px;
+    height: 250px;
+  }
+  .barChartHeightDiv{
+    width: 320px;
+    height: 230px;
+    margin-bottom: 20px;
+  }
+  .barChart{
+    width: 200px;
+    height: 500px;
+  }
+  .addProductForm{
+    margin: 20px auto;
+    height:900px;
+    width: 300px;
+  }
+  .searchArr{
+    top:9%;
+    width: 300px;
+    height: 200px;
+
+  }
+}
