@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import img from "../images/0c7fb986-8a4b-488b-86ad-00230a25b3bb.png"
 import { useNavigate } from 'react-router-dom'
 import { DashboardContext } from '../context/DashboardContext'
 
@@ -16,7 +15,7 @@ function DashboardAddProductIntoStockProduct(props) {
     <div  className='h-96 m-4 w-72 rounded-lg p-3 flex hover:shadow-xl cursor-pointer duration-300 flex-col justify-around items-center border-2'>
     <img  onClick={()=>{
       setRewievdItem(props.item)
-      navigate('/DashboardProductStats')}} src={img} className='w-full h-1/2'>
+      navigate('/DashboardProductStats')}} src={props.item.imageId} className='w-full h-1/2'>
     
     </img> 
     <div className='h-1/3 w-full p-2 flex items-center justify-around flex-col'>

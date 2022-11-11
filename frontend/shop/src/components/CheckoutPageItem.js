@@ -30,7 +30,7 @@ function CheckoutPageItem(props) {
     <img onClick={(e)=>{
     setItem(item)
         navigate("/ProductPage")
-    }} src={ item&&require(`../../images/${item.imageId}`) }></img>
+    }} src={ item&&item.imageId }></img>
         <h1>{item&&item.name}</h1>
 
                 <div>

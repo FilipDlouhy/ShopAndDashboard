@@ -118,7 +118,7 @@ if(item){
           
           <div className='productPageTop'>
     <div className='productPageImg'>
-        <img src={require(`../../images/${item.imageId}`) }></img>
+        <img src={item.imageId }></img>
     </div>
     <div className='productPageDescription'>
 

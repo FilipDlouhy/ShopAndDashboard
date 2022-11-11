@@ -1,4 +1,4 @@
-import React, { useContext,useState } from 'react'
+import React, { useContext,useState,useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { DashboardContext } from '../context/DashboardContext'
 import axios from 'axios'
@@ -7,12 +7,15 @@ function DashboardProductsProduct(props) {
   const {setUpdatedProduct} = useContext(DashboardContext)
   const {setItems} = useContext(DashboardContext)
   const {setRewievdItem} = useContext(DashboardContext)
+  useEffect(()=>{
+    console.log()
+  },[])
   return (
     <div className=' w-80 h:80 sm:h-96 m-5  rounded border-2' >
     <img onClick={()=>{
   setRewievdItem(props.item)
   navigate('/DashboardProductStats')
-    }} src={require("../images/4f61bef3-338d-4f22-b823-e57cc04ed429.png")} className='h-8/12 p-10 hover:w-full duration-300 cursor-pointer hover:bg-blue-200 w-11/12'>
+    }} src={props.item.imageId} className='h-64 p-10 hover:w-full duration-300 cursor-pointer hover:bg-blue-200 w-11/12'>
    </img>
    <div className='px-4 w-full flex justify-around flex-col pb-10 h-40'>
        <p className='text-sm text-gray-500'>{props.item.name}</p>

@@ -5,12 +5,15 @@ import { DashboardContext } from '../context/DashboardContext'
 function DashBoardDashboardLatestOrder(props) {
   const {setReviewdOrder} = useContext(DashboardContext)
 const navigate= useNavigate()
-const [date,setDate] = useState()
+const [date,setDate] = useState("no")
 useEffect(()=>{
-axios.get(`http://localhost:5000/GetOrderTransaction/${props.order.orderId}`).then((res)=>{
- setDate(res.data.createdAt)
-
-})
+if(props.order.payed){
+  axios.get(`http://localhost:5000/GetOrderTransaction/${props.order.orderId}`).then((res)=>{
+  
+    setDate(res.data.createdAt)
+   })
+}
+ 
 },[])
 function getDate (Date){
 let date = parseInt(Date.slice(0,2))
@@ -62,7 +65,7 @@ else if(date ===12){
     </div>
     <div className='h-full flex text-xs items-center  justify-center 2xl:justify-between w-3/12'>
     <p className='font-bold   text-gray-500 '>{props.order.price}$</p>
-     {date &&   <p className= '  2xl:inline-block hidden font-bold text-green-900 bg-green-200 rounded-full p-2'>{props.order.payed? getDate(date):"Not Payed"}</p> } 
+     {date &&   <p className= {props.order.payed ?'  2xl:inline-block hidden font-bold text-green-900 bg-green-200 rounded-full p-2 ':'  2xl:inline-block hidden font-bold text-red-900 bg-red-200 rounded-full p-2 '}>{props.order.payed ? getDate(date):"Not Payed"}</p> } 
     </div>
     <div className='h-full flex items-center justify-between w-2/12'>
     <p className='font-bold text-xs hidden sm:inline-block   text-gray-500 '>{props.order.createdAt}</p>

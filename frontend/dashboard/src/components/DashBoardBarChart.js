@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {useState} from "react"
 import {Bar} from "react-chartjs-2"
 import {Chart as CharJS } from "chart.js/auto"
 import { data } from 'autoprefixer'
 function DashBoardBarChart(props) {
       
-
+useEffect(()=>{
+  console.log(props.barChartData)
+})
 
   return (
     <div className='barChart'>

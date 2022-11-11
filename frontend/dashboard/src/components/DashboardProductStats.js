@@ -68,7 +68,7 @@ function DashboardProductStats() {
 
             <div className='w-1/2 h-full flex items-center justify-center'>
                     <div className=' text-4xl sm:text-8xl  w-24 sm:w-48  h-24 sm:h-48  text-red-50  rounded-full bg-sky-500 shadow-xl flex items-center justify-center p-4'>
-                    <img src={img}></img>
+                    <img src={reviewedItem.imageId}></img>
 
                     </div>
 

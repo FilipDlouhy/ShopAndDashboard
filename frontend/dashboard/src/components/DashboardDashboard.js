@@ -79,6 +79,7 @@ const [orders,setOrders] = useState()
                        console.log(order.createdAt.slice(0,2) +"/" + order.createdAt.slice(6,10) )
                        let date =order.createdAt.slice(0,2) +"/" + order.createdAt.slice(6,10)
                          let newSale ={date:date,money:0}
+                         console.log(newSale)
                          let arr =[]
                          sales.map((sale)=>{
                       

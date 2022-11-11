@@ -73,7 +73,7 @@ function CartItem(props) {
            })
     }}
     ><i class="fa-sharp fa-solid fa-xmark"></i></button>
-    <img src={require(`../../images/${props.item.imageId}`) }></img>
+    <img src={props.item.imageId }></img>
     <h1>{cartItem&&cartItem.name}</h1>
     <div>
     <h2>Quantity</h2>

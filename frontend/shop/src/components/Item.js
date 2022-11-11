@@ -100,7 +100,7 @@ sum += parseInt(revier.rating)
       navigate("/ProductPage")
     }} className='item'>
        <div className='itemImgDiv'>
-    <img src={require(`../../images/${props.item.imageId}`) } ></img>
+    <img src={props.item.imageId } ></img>
        </div>
 
     <div className='itemDescription'>

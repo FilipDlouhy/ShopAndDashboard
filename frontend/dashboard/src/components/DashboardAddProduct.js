@@ -9,7 +9,7 @@ function DashboardAddProduct() {
   const [descpirtion,setDescription] = useState()
   const [seller,setSeller] =useState()
   const [category,setCategory] =useState()
-  const [file,setFile] = useState()
+  const [url,setUrl] = useState()
   const [sellets,setSellers] = useState()
   const [error,setError] =useState(false)
   const {setItems} = useContext(DashboardContext)
@@ -35,7 +35,7 @@ function DashboardAddProduct() {
                       descpirtion:descpirtion,
                       inStock:true,
                       price:price,
-                      imageId:"57cb2373-78e4-4f69-91d0-a187f7205e55.png",
+                      imageId:url,
                       category:category,
                       seller:seller,
                       deleted:true,
@@ -104,7 +104,7 @@ function DashboardAddProduct() {
                                 <label className='text-xl font-bold' for="stock">Add Image:</label>   
                                 <input onChange={(e)=>{
                                
-                                }} className='  hover:bg-gray-100  border-2 text-2xl font-bold h-10 w-full text-center' name='stock' id='stock' type="file"></input>
+                                }} placeholder="Img Url" className='  hover:bg-gray-100  border-2 text-2xl font-bold h-10 w-full text-center' name='stock' id='stock' type="text"></input>
                                 </div>
                     </form>                                          
 
